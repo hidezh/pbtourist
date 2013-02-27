@@ -15,5 +15,5 @@
 /tmp
 
 /config/database.yml
-config/database.yml
-/public/assets
+
+/public/assets/
