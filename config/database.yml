@@ -3,12 +3,12 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-development:
+production:
   adapter:  mysql2
   database: pbtourist
   host:     localhost
   username: root
-  password: sam8888
+  password: s58500314d
   encoding: utf8
 
 #development:
