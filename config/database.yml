@@ -8,24 +8,24 @@ production:
   database: pbtourist
   host:     localhost
   username: root
-  password: sam8888
+  password: s58500314d
   encoding: utf8
 
-development:
-  adapter:  mysql2
-  database: pbtourist_development
-  host:     localhost
-  username: root
-  password: sam8888
-  encoding: utf8
+#development:
+#  adapter:  mysql2
+#  database: pbtourist_development
+#  host:     localhost
+#  username: root
+#  password: sam8888
+#  encoding: utf8
 
-test:
-  adapter:  mysql2
-  database: pbtourist_test
-  host:     localhost
-  username: root
-  password: sam8888
-  encoding: utf8
+#test:
+#  adapter:  mysql2
+#  database: pbtourist_test
+#  host:     localhost
+#  username: root
+#  password: sam8888
+#  encoding: utf8
 
 
 # development:
