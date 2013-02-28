@@ -34,4 +34,22 @@ Pbtourist::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Email settings
+  config.action_mailer.default_url_options = { host: 'dev.pbtourist.com' }
+
+  config.action_mailer.asset_host = 'pbtourist.com'
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.smtp_settings = {
+    address:        'smtp.exmail.qq.com',
+    port:           25,
+    domain:         'pbtourist.com',
+    user_name:      'pbtourist@pbtourist.com',
+    password:       'pb20120705**',
+    authentication: :login
+  }
 end

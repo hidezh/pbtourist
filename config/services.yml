@@ -1,0 +1,21 @@
+common: &common
+  weibo:
+    api_key: "xxxxxxxx"
+    api_secret: "xxxxxxxxx"
+    redirect_uri: "http://www.joenix.com/users/auth/weibo/callback"
+  qq_connect:
+    api_key: "xxxxxxxx"
+    api_secret: "xxxxxxxx"
+    redirect_uri: "http://www.joenix.com/users/auth/qq_connect/callback"
+
+production:
+  <<: *common
+
+development:
+  weibo:
+    api_key: "xxxxxxxx"
+    api_secret: "xxxxxxxx"
+    redirect_uri: "http://127.0.0.1:3000/users/auth/weibo/callback"
+
+test:
+  <<: *common

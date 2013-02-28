@@ -61,6 +61,24 @@ Pbtourist::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
+  # Email settings
+  config.action_mailer.default_url_options = { host: 'dev.pbtourist.com' }
+
+  config.action_mailer.asset_host = 'pbtourist.com'
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: 'utf-8'
+  config.action_mailer.smtp_settings = {
+    address:        'smtp.exmail.qq.com',
+    port:           25,
+    domain:         'pbtourist.com',
+    user_name:      'pbtourist@pbtourist.com',
+    password:       'pb20120705**',
+    authentication: :login
+  }
+
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
