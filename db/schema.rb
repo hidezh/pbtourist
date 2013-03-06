@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 3) do
+ActiveRecord::Schema.define(:version => 4) do
+
+  create_table "comesoon_shares", :force => true do |t|
+    t.string   "name",                      :null => false
+    t.integer  "times",      :default => 0
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+  end
 
   create_table "user_soons", :force => true do |t|
     t.string   "name",       :null => false

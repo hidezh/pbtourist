@@ -8,3 +8,10 @@
 User.create!(:name => 'admin',:email => 'pbtourist@pbtourist.com', :password => 'pbtourist2013', :password_confirmation => 'pbtourist2013', :admin => true)
 User.create!(:name => 'drannls',:email => 'liangshuo007@qq.com', :password => 'pb20120705**', :password_confirmation => 'pb20120705**', :admin => true)
 User.create!(:name => 'hide',:email => '177365340@qq.com', :password => 'zhanghui', :password_confirmation => 'zhanghui', :admin => true)
+
+ComesoonShare.create!(:name=>"google")
+ComesoonShare.create!(:name=>"facebook")
+ComesoonShare.create!(:name=>"twitter")
+ComesoonShare.create!(:name=>"weibo")
+ComesoonShare.create!(:name=>"tqq")
+ComesoonShare.create!(:name=>"email")
